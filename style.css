@@ -1,0 +1,736 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background: #FCFCFC;
+    overflow-x: hidden;
+}
+
+#header {
+    padding: 0;
+    /* margin-bottom: -50vw; */
+    /* max-height: 51vw; */
+    background: url(./assets/landing\ image.svg)no-repeat;
+    background-size: contain;
+}
+
+
+/********** navbar ************/
+
+#navBar {
+    z-index: 1 !important;
+}
+
+.navbar-brand {
+    font-family: 'Josefin Slab', serif;
+    color: #716459 !important;
+    font-size: 15px;
+    border-left: 3px solid #716459;
+    padding-left: 15px;
+}
+
+.navbar-nav {
+    font-family: 'ABeeZee', sans-serif;
+    font-size: 15px;
+    padding: 0px;
+}
+
+.navbar-nav li a {
+    color: #2E5C62 !important;
+    float: right;
+    text-align: left;
+}
+
+.nav-link {
+    margin-left: 1vw;
+    letter-spacing: 0;
+}
+
+.fa-bars {
+    color: #2E5C62;
+    font-size: 30px !important;
+}
+
+.navbar-toggler {
+    border: none !important;
+}
+
+.navbar-toggler:focus,
+.navbar-toggler:active {
+    outline: none !important;
+    box-shadow: none !important;
+}
+
+
+/********landing**********/
+
+#landingImage {
+    /* width: 60vw; */
+    /* object-fit: cover; */
+    /* height: 20vw; */
+    /* only if you want fixed height */
+    z-index: -1 !important;
+    position: relative;
+    top: -56px;
+}
+
+.landing {
+    /* width: 75vw;
+    object-fit: cover;
+    height: 49.05vw; */
+    /* only if you want fixed height */
+}
+
+#content {
+    /* position: relative;
+    top: -40vw !important; */
+    margin-top: 12vw;
+    z-index: 1;
+}
+
+.adventure {
+    font-family: 'Sansita', sans-serif;
+    color: #2E5C62;
+    font-size: 8vw;
+    position: relative;
+    /* top: 1vw; */
+    left: 11vw;
+    letter-spacing: 0.3vw;
+    animation: slideLeft 5s linear alternate infinite;
+}
+
+@keyframes slideLeft {
+    0% {
+        left: 0;
+    }
+    100% {
+        left: -3vw;
+    }
+}
+
+.ready {
+    font-family: 'Josefin Slab', serif;
+    color: #2E5C62;
+    font-size: 5vw;
+    font-style: italic;
+    font-weight: 550;
+    position: relative;
+    top: 3vw;
+    left: -9vw;
+    animation: slide 5s linear alternate infinite;
+}
+
+@keyframes slide {
+    0% {
+        left: 0vw;
+    }
+    100% {
+        left: 3vw;
+    }
+}
+
+#trackImg {
+    position: relative;
+    top: -24vw;
+    left: 51vw;
+    margin-right: 0;
+    padding: 0;
+}
+
+#landingImg {
+    object-fit: cover;
+    height: 20vw;
+    margin-right: 5vw;
+}
+
+.path {
+    stroke-dasharray: 1000;
+    /* with this, we made svg to have 15px of dashes, on code. but there must be strokes in svg for that */
+    stroke-dashoffset: 1000;
+    animation: dash 3s linear forwards;
+}
+
+@keyframes dash {
+    from {
+        stroke-dashoffset: 1000;
+    }
+    to {
+        stroke-dashoffset: 0;
+    }
+    0% {
+        opacity: 1;
+    }
+    90% {
+        opacity: 0.75;
+    }
+    95% {
+        opacity: 0.5;
+    }
+    100% {
+        display: none;
+        opacity: 0;
+    }
+}
+
+.x {
+    opacity: 0;
+    animation: appear 3s ease-in-out forwards;
+    animation-delay: 2.7s;
+}
+
+@keyframes appear {
+    0% {
+        opacity: 0;
+    }
+    10% {
+        opacity: 1;
+    }
+    100% {
+        opacity: 0;
+    }
+}
+
+.button1 {
+    width: 15vw;
+    height: 4vw;
+    position: relative;
+    left: 30vw;
+    top: 2vw;
+    color: #716459 !important;
+    font-family: 'Josefin Slab', serif;
+    font-size: 1.2vw !important;
+    border: 3px solid #716459;
+    background: none;
+    border-radius: 0;
+    /* transition: ease-in-out 2s;
+        transition-delay: 4s;
+        transform: scale(1.1); */
+}
+
+.button1:hover {
+    color: #fcfcfc !important;
+    background: #716459;
+    border-color: #716459;
+}
+
+
+/*************about Us************/
+
+#aboutUs {
+    /* padding: 0; */
+    margin-top: 10vw;
+    margin-bottom: 12vw;
+    /* padding-bottom: 15vw; */
+    /* height: 35vw; */
+}
+
+.about {
+    font-family: 'Josefin Slab', serif;
+    color: #C1C2B5;
+    font-size: 6vw;
+    font-weight: bold;
+}
+
+.lorem {
+    font-family: 'ABeeZee', sans-serif;
+    color: #C1C2B5;
+    font-size: 1.3vw;
+}
+
+.loremHr {
+    transform: rotate(180deg);
+    background: #2E5C62;
+    width: 0.2vw;
+    height: 9vw;
+}
+
+.aboutUsTrack {
+    position: relative;
+    top: -30vw;
+    left: -21vw;
+    margin-right: 0;
+    padding: 0;
+}
+
+#aboutUsTrack {
+    object-fit: cover;
+    height: 19vw;
+}
+
+
+/**********what we do**********/
+
+#whatWeDo {
+    background: #C1C2B5;
+    padding-top: 7vw;
+    margin-top: -0.5vw;
+    padding-bottom: 10vw;
+    /* height: 55vw; */
+}
+
+.whatWeDo {
+    padding: 0;
+}
+
+.title {
+    font-family: 'Josefin Slab', serif;
+    color: #2E5C62;
+    font-size: 6vw;
+    font-weight: bold;
+    margin-top: -2vw;
+}
+
+.units {
+    border: none;
+    border-radius: 0px;
+    background: #fcfcfc;
+    margin-top: 2vw;
+    margin-right: 0;
+    margin-left: 0;
+    padding-right: 0;
+    padding-left: 0;
+}
+
+.units-body {
+    /* color: #fcfcfc; */
+}
+
+.cardLink {
+    /* text-decoration: none; */
+    color: #2E5C62 !important;
+    font-family: 'Josefin Slab', serif;
+}
+
+.cardLink:hover {
+    text-decoration-color: #2E5C62 !important;
+}
+
+hr {
+    background: #2E5C62;
+}
+
+.img1 {
+    height: 100%;
+}
+
+.units-title {
+    font-family: 'Josefin Slab', serif;
+    color: #2E5C62;
+    font-size: 1.5vw;
+    font-weight: 500;
+    /* height: 9vw; */
+    /* padding: 2vw; */
+}
+
+.button2 {
+    width: 100%;
+    height: 4vw;
+    /* position: relative;
+        right: 18vw;
+        top: 2vw; */
+    color: #2E5C62 !important;
+    font-family: 'Josefin Slab', serif;
+    font-size: 1.5vw !important;
+    border: 5px solid #2E5C62;
+    border-radius: 0;
+    font-weight: bold;
+    margin-top: 1vw;
+}
+
+.button2:hover {
+    color: #FCFCFC !important;
+    background: #2E5C62;
+    border-color: #2E5C62;
+}
+
+.whatWeDoTrack {
+    position: relative;
+    bottom: 42vw;
+    left: 55vw;
+}
+
+
+/************ testimonials ***********/
+
+#testimonials {
+    /* height: 50vw; */
+    margin-bottom: 5vw;
+    margin-top: 5vw;
+}
+
+.testimonialsContent {
+    /* height: 50vw; */
+}
+
+
+/* .testimonialsCard {
+    padding: 0;
+} */
+
+.testimonialsTitle {
+    font-family: 'Josefin Slab', serif;
+    color: #716459;
+    font-size: 6vw;
+    font-weight: bold;
+    margin-bottom: 2vw;
+}
+
+.col1 {
+    margin-top: 5vw;
+    background: none;
+    border: none;
+}
+
+.col1Text {
+    /* height: 20vw; */
+    float: left;
+    font-family: 'ABeeZee', sans-serif;
+    color: #716459;
+    font-size: 1.3vw;
+    border: 1px solid;
+    border-image: url(./assets/testimonialQ1.svg);
+    border-image-slice: 270;
+    border-image-width: 15vw;
+}
+
+.user-details {
+    display: inline-block;
+    font-size: 0.9vw;
+    position: relative;
+    top: -5vw;
+    font-style: italic;
+}
+
+.row1Text {
+    /* height: 15vw; */
+    float: left;
+    font-family: 'ABeeZee', sans-serif;
+    color: #716459;
+    font-size: 1.3vw;
+    border: 1px solid;
+    border-image: url(./assets/testimonialQ2.svg);
+    border-image-slice: 170;
+    border-image-width: 10vw;
+}
+
+.user-details1 {
+    display: inline-block;
+    font-size: 0.9vw;
+    /* position: relative;
+    top: -5vw; */
+    font-style: italic;
+}
+
+.row2Text {
+    /* height: 15vw; */
+    float: left;
+    font-family: 'ABeeZee', sans-serif;
+    color: #716459;
+    font-size: 1.3vw;
+    border: 1px solid;
+    border-image: url(./assets/testimonialQ3.svg);
+    border-image-slice: 170;
+    border-image-width: 10vw;
+}
+
+.testimonialsTrack {
+    position: relative;
+    top: -40vw;
+    left: 35vw;
+}
+
+
+/*********** contact us ************/
+
+#contactUs {
+    font-family: 'Josefin Slab', serif;
+    color: #fcfcfc;
+    /* height: 50vw; */
+    background: #2E5C62;
+    padding-top: 2vw;
+    padding-bottom: 5vw;
+}
+
+.contactUs {
+    padding: 0;
+}
+
+.colPadding {
+    padding: 0;
+}
+
+.contactUsTitle {
+    font-size: 6vw;
+    font-weight: bold;
+}
+
+.forms {
+    border-radius: 0px;
+}
+
+.forms::placeholder {
+    color: #2E5C62;
+    background: #fcfcfc;
+}
+
+.buttonX {
+    width: 100%;
+    height: vw;
+    /* position: relative;
+        right: 18vw;
+        top: 2vw; */
+    background: #fcfcfc;
+    color: #2E5C62;
+    border-radius: 0;
+    font-weight: bold;
+}
+
+.buttonX:hover {
+    color: #FCFCFC !important;
+    background: #2E5C62;
+    border-color: #FCFCFC;
+}
+
+.contactUsTrack {
+    position: relative;
+    bottom: 30vw;
+    left: 50vw;
+}
+
+
+/********* footer ***********/
+
+footer {
+    color: #716459;
+    font-family: 'ABeeZee', sans-serif;
+    /* height: 30vw; */
+    padding-top: 5vw;
+}
+
+.footerBrand {
+    border-left: 3px solid #716459;
+    font-family: 'Josefin Slab', serif;
+    font-size: 20px;
+    padding-left: 15px;
+}
+
+.footerLorem {
+    padding-top: 5px;
+}
+
+.footerNav li {
+    list-style: none;
+    padding-bottom: 40px;
+}
+
+.footerNav li a {
+    text-decoration: none;
+    color: #716459;
+    font-size: 20px;
+}
+
+.footerSocial {
+    padding-right: 1vw;
+    width: 4vw;
+}
+
+
+/* .social {
+    width: 3vw;
+} */
+
+@media (min-width: 200px) and (max-width:767.98px) {
+    .title {
+        font-size: 10vw;
+        font-weight: bold;
+    }
+    .cardImg {
+        /* height: 10vw; */
+    }
+    .units {
+        width: 60vw;
+        margin: 0 auto;
+    }
+    .units-body {
+        padding: 3vw;
+    }
+    .units-title {
+        font-size: 4vw;
+        height: 13vw;
+    }
+    h5 {
+        font-size: 3vw;
+        margin: 0;
+        margin-top: -2vw;
+    }
+    .things {
+        margin: 3vw;
+    }
+    #landingImage {
+        top: -10vw;
+    }
+    .about {
+        font-size: 10vw;
+        font-weight: bold;
+        margin-top: -10vw;
+    }
+    .lorem {
+        font-size: 2.5vw;
+    }
+    .loremHr {
+        width: 0.5vw;
+        height: 37vw;
+    }
+    .whatWeDo {
+        /* height: 247vw; */
+    }
+    .testimonialsTitle {
+        font-size: 10vw;
+        font-weight: bold;
+        margin-bottom: 5vw;
+    }
+    .col1 {
+        padding: 10vw 0 0 0 !important;
+    }
+    .col1Text {
+        width: 60vw;
+        margin: 5vw auto;
+        padding: 0;
+        border-image-slice: 150;
+    }
+    .row1Text {
+        /* width: 60vw; */
+        margin: 5vw 90px !important;
+        padding: 0;
+        border-image-slice: 130;
+        border-image-width: 15vw;
+    }
+    .row2Text {
+        /* width: 60vw; */
+        margin: 5vw 90px !important;
+        padding: 0;
+        border-image-slice: 130;
+        border-image-width: 15vw;
+    }
+    h6 {
+        font-size: 2.5vw;
+    }
+    .firstH6 {
+        margin-bottom: 5vw !important;
+    }
+    .rounded-circle {
+        width: 20vw;
+    }
+    .testimonialsCard {
+        padding: 0 2vw 0 2vw;
+    }
+    .user-details {
+        margin-left: 17vw;
+        font-size: 1.5vw;
+    }
+    .user-details1 {
+        font-size: 1.5vw;
+        margin-left: 16.5vw;
+        position: relative;
+        top: -5vw;
+    }
+    .colPadding {
+        padding: 0 !important;
+    }
+    .navbar-nav li a {
+        font-weight: bold !important;
+        /* color: #716459 !important; */
+    }
+    .navbar-toggler {
+        padding-right: 0;
+    }
+    .navbar {
+        padding: 0;
+    }
+    #content {
+        position: relative;
+        top: -15vw;
+        left: -10vw;
+    }
+    .ready {
+        font-size: 10vw;
+        top: 6vw;
+        margin-left: 5vw;
+    }
+    .adventure {
+        font-size: 15vw;
+        margin-left: 70px;
+    }
+    .button1 {
+        font-size: 2vw !important;
+        line-height: 0.3vw;
+        width: 25vw;
+        height: 7vw;
+        background: #716459;
+        color: #fcfcfc !important;
+    }
+    .button1:hover {
+        background: none;
+        color: #716459 !important;
+    }
+    #trackImg {
+        margin-left: -50vw;
+        margin-top: 13vw;
+        transform: rotateX(180deg);
+        stroke-width: 5vw;
+    }
+    .path {
+        stroke-width: 10;
+    }
+    .contactUs {
+        width: 60vw;
+        margin: 0 auto;
+        padding-bottom: 3vw;
+    }
+    .contactUsTitle {
+        font-size: 10vw;
+        margin-bottom: 5vw;
+    }
+    .title2 {
+        font-size: 5vw;
+    }
+    footer {
+        padding: 5vw 5vw !important;
+    }
+}
+
+@media (min-width: 768px) and (max-width:991.98px) {
+    .row1Text {
+        /* width: 60vw; */
+        /* margin: 5vw 90px !important; */
+        padding: 0;
+        border-image-slice: 170;
+        border-image-width: 15.1vw;
+    }
+    .row2Text {
+        /* width: 60vw; */
+        margin-top: 10vw !important;
+        padding: 0;
+        border-image-slice: 170;
+        border-image-width: 15.1vw;
+    }
+}
+
+@media (min-width: 992px) and (max-width: 1199.98px) {
+    .row1Text {
+        /* width: 60vw; */
+        /* margin: 5vw 90px !important; */
+        padding: 0;
+        border-image-slice: 170;
+        border-image-width: 15.1vw;
+    }
+    .row2Text {
+        /* width: 60vw; */
+        margin-top: 10vw !important;
+        padding: 0;
+        border-image-slice: 170;
+        border-image-width: 15.1vw;
+    }
+}
