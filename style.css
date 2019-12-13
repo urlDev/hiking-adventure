@@ -3,7 +3,7 @@
     padding: 0;
 }
 
-body {
+body,html {
     background: #FCFCFC;
     overflow-x: hidden;
     width: 100%;
